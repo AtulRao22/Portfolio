@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutSection.css';
-import nodejsimg from "../assets/node.js.svg"
+import nodejsimg from "../assets/Node.js.svg"
 import FullStack from "../assets/app-development.png"
 
 const AboutSection = () => {
