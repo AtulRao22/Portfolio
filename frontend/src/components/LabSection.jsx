@@ -19,6 +19,7 @@ const LabSection = () => {
       title: 'Atul Rao - Portfolio Website',
       icon: '👨‍💻',
       desc: 'A modern, responsive portfolio website for showcasing my projects, skills, and experience.',
+      link: 'https://github.com/AtulRao22/Portfolio'
     },
     {
       title: 'BrainTiles - Simon Game',
