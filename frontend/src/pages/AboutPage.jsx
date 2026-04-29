@@ -92,6 +92,7 @@ const AboutPage = () => {
                 <div className="tech-item glass-panel"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="invert-icon" /><span>GitHub</span></div>
                 <div className="tech-item glass-panel"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/render.svg" alt="Render" className="invert-icon" /><span>Render</span></div>
                 <div className="tech-item glass-panel"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" /><span>Netlify</span></div>
+                <div className="tech-item glass-panel"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg" alt="Vercel" className="invert-icon" /><span>Vercel</span></div>
               </div>
             </div>
           </div>
