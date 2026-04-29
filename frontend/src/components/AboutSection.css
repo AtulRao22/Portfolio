@@ -1,0 +1,168 @@
+.about-graphic-section {
+  padding-top: 0;
+  min-height: 80vh;
+}
+
+.section-header.text-center {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.team-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+.graphic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+}
+
+.tech-tree {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 1.5rem;
+  z-index: 10;
+  margin-top: 50px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.connecting-lines {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Pseudo lines targeting the center node */
+.line {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(140, 82, 255, 0.1), rgba(140, 82, 255, 0.8));
+  height: 100%;
+  transform-origin: bottom center;
+}
+
+.line-1 {
+  transform: rotate(-30deg) scaleY(1.1);
+  margin-left: -100px;
+}
+
+.line-2 {
+  transform: rotate(-15deg) scaleY(1.05);
+  margin-left: -50px;
+}
+
+.line-3 {
+  transform: rotate(0deg);
+}
+
+.line-4 {
+  transform: rotate(15deg) scaleY(1.05);
+  margin-left: 50px;
+}
+
+.line-5 {
+  transform: rotate(30deg) scaleY(1.1);
+  margin-left: 100px;
+}
+
+.center-node {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 50px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px var(--accent-glow), 0 0 80px var(--accent-color);
+  z-index: 10;
+}
+
+.tech-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.rings {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(70deg);
+  border-radius: 50%;
+  border: 1px solid rgba(140, 82, 255, 0.3);
+  box-shadow: 0 0 10px rgba(140, 82, 255, 0.1) inset;
+}
+
+.ring-1 {
+  width: 300px;
+  height: 300px;
+  animation: spin 10s linear infinite;
+}
+
+.ring-2 {
+  width: 450px;
+  height: 450px;
+  animation: spin 15s linear infinite reverse;
+}
+
+.ring-3 {
+  width: 600px;
+  height: 600px;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotateX(70deg) rotateZ(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotateX(70deg) rotateZ(360deg);
+  }
+}

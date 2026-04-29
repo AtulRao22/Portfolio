@@ -1,0 +1,131 @@
+.contact-section {
+  padding: 0px 5% 50px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: 3rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+  color: var(--accent-color);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto 3rem auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.submit-btn {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #7a45e6;
+}
+
+.form-status {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-top: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert(1) brightness(1.5);
+  transition: all 0.3s ease;
+}
+
+
+/* Hover effect */
+.social-icon:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  filter: invert(1) brightness(1.6) drop-shadow(0 0 10px var(--accent-glow));
+}
+
+
+
+.footer {
+  padding-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: auto;
+}
+
+.footer p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
