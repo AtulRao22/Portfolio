@@ -199,10 +199,21 @@
     height: 180px;
   }
 
-  .line-1 { margin-left: -60px; }
-  .line-2 { margin-left: -30px; }
-  .line-4 { margin-left: 30px; }
-  .line-5 { margin-left: 60px; }
+  .line-1 {
+    margin-left: -60px;
+  }
+
+  .line-2 {
+    margin-left: -30px;
+  }
+
+  .line-4 {
+    margin-left: 30px;
+  }
+
+  .line-5 {
+    margin-left: 60px;
+  }
 
   .center-node {
     width: 64px;
@@ -233,6 +244,64 @@
 
 @media (max-width: 480px) {
   .graphic-container {
+    height: 280px;
+  }
+
+  .connecting-lines {
+    display: flex;
+    top: 70px;
+    height: 120px;
+  }
+
+  .line-1 {
+    margin-left: -45px;
+  }
+
+  .line-2 {
+    margin-left: -22px;
+  }
+
+  .line-4 {
+    margin-left: 22px;
+  }
+
+  .line-5 {
+    margin-left: 45px;
+  }
+
+  .tech-icons {
+    margin-top: 0.5rem;
+  }
+
+  .center-node {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+
+  .tech-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ring-1 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ring-2 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .ring-3 {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graphic-container {
     height: 300px;
   }
 
@@ -242,10 +311,21 @@
     height: 120px;
   }
 
-  .line-1 { margin-left: -45px; }
-  .line-2 { margin-left: -22px; }
-  .line-4 { margin-left: 22px; }
-  .line-5 { margin-left: 45px; }
+  .line-1 {
+    margin-left: -45px;
+  }
+
+  .line-2 {
+    margin-left: -22px;
+  }
+
+  .line-4 {
+    margin-left: 22px;
+  }
+
+  .line-5 {
+    margin-left: 45px;
+  }
 
   .tech-icons {
     margin-top: 0.5rem;
@@ -253,6 +333,11 @@
 
   .center-node {
     margin-bottom: 20px;
+  }
+
+  .tech-logo {
+    width: 30px;
+    height: 30px;
   }
 
   .ring-1 {
@@ -272,6 +357,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .ring-1,
   .ring-2,
   .ring-3 {
