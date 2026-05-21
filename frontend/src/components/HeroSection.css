@@ -28,7 +28,6 @@
   position: relative;
 }
 
-/* Annotation styles */
 .avatar-annotation {
   position: absolute;
   top: -50px;
@@ -44,12 +43,11 @@
 }
 
 .annotation-text {
-  font-family: "Preahvihear", sans-serif;
+  font-family: 'Preahvihear', sans-serif;
   font-size: 1.5rem;
   color: #fff;
   white-space: nowrap;
   font-weight: 300;
-
 }
 
 .hero-avatar-img {
@@ -61,23 +59,19 @@
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px);
+  0%,
+  100% {
+    transform: translateY(0);
   }
 
   50% {
     transform: translateY(-15px);
   }
-
-  100% {
-    transform: translateY(0px);
-  }
 }
 
 .hero-text-block {
   max-width: 600px;
-  font-family: "Preahvihear", sans-serif;
-
+  font-family: 'Preahvihear', sans-serif;
 }
 
 .hero-subtitle {
@@ -95,21 +89,7 @@
 .highlight-outline {
   color: transparent;
   -webkit-text-stroke: 2px var(--accent-color);
-  position: relative;
 }
-
-/* .highlight-outline::after {
-  content: '';
-  position: absolute;
-  left: -5%;
-  top: 50%;
-  width: 110%;
-  height: 100%;
-  border: 2px solid var(--accent-color);
-  border-radius: 50%;
-  transform: rotate(-5deg);
-  opacity: 0.6;
-} */
 
 .dots {
   color: var(--text-main);
@@ -129,11 +109,8 @@
   align-items: center;
 }
 
-/* About Text Block mixed into Hero section for fluid layout per image */
 .about-text-block {
   max-width: 800px;
-  margin-top: 0;
-  padding-bottom: 0;
 }
 
 .about-heading {
@@ -141,29 +118,11 @@
   margin-bottom: 0.5rem;
 }
 
-.cursor-blink {
-  animation: blink 1s step-end infinite;
-  color: var(--text-main);
-}
-
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
 .about-subheading {
   font-size: 1.2rem;
   color: var(--text-main);
   margin-bottom: 1.5rem;
 }
-
 
 .about-paragraph {
   font-size: 1.1rem;
@@ -182,11 +141,8 @@
     justify-content: center;
   }
 
-  .hero-title {
-    font-size: 3rem;
-  }
-
+  .hero-title,
   .about-heading {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }

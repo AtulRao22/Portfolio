@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: var(--nav-height);
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, border-color 0.3s ease;
   background: transparent;
   display: flex;
   align-items: center;
@@ -24,20 +24,15 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 var(--section-padding-x);
 }
 
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Brush Script MT', cursive;
   font-size: 2rem;
   font-weight: 300;
   color: #fff;
   letter-spacing: -1px;
-}
-
-/* Simulate the handwriting style with cursive if available, but default Poppins with weight 300 looks sleek */
-.logo {
-  font-family: 'Brush Script MT', cursive;
   transform: rotate(-5deg);
   display: inline-block;
 }
@@ -52,7 +47,6 @@
   font-weight: 500;
   color: #fff;
   opacity: 0.8;
-  position: relative;
 }
 
 .nav-links a:hover {

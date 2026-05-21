@@ -30,7 +30,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="contact-section">
-      <div className="contact-container text-center">
+      <div className="contact-container">
         <h2 className="contact-title">Contact</h2>
         <p className="contact-subtitle">
           I’m currently seeking opportunities to grow as a full-stack developer and build real-world web applications. Have a project in mind? Let’s connect.        </p>

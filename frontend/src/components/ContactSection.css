@@ -1,19 +1,12 @@
 .contact-section {
-  padding: 2rem 5% 2.5rem;
+  padding: 2rem var(--section-padding-x) 2.5rem;
   min-height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   text-align: center;
 }
 
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .contact-title {
@@ -31,10 +24,8 @@
 .contact-email {
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--text-main);
   margin-bottom: 1.5rem;
   display: inline-block;
-  transition: color 0.3s ease;
 }
 
 .contact-email:hover {
@@ -47,7 +38,7 @@
   gap: 1rem;
   padding: 1.5rem;
   max-width: 500px;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 1.5rem;
 }
 
 .contact-form input,
@@ -105,19 +96,15 @@
   justify-content: center;
   align-items: center;
   filter: invert(1) brightness(1.5);
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
-
-/* Hover effect */
 .social-icon:hover {
   background: var(--accent-color);
   border-color: var(--accent-color);
   transform: translateY(-5px);
   filter: invert(1) brightness(1.6) drop-shadow(0 0 10px var(--accent-glow));
 }
-
-
 
 .footer {
   padding-top: 1.5rem;

@@ -24,10 +24,6 @@
   z-index: 2;
 }
 
-.about-header {
-  margin-bottom: 0;
-}
-
 .about-title {
   font-size: clamp(2.25rem, 5vw, 3rem);
   margin-bottom: 0.5rem;
@@ -208,7 +204,6 @@
   }
 }
 
-/* Tech Stack Section */
 .tech-stack-section {
   display: flex;
   flex-direction: column;
