@@ -9,18 +9,20 @@
 }
 
 .team-heading {
-  font-size: 2.2rem;
+  font-size: clamp(1.35rem, 4vw, 2.2rem);
   font-weight: 600;
   margin-bottom: 1rem;
+  line-height: 1.35;
 }
-
 
 .graphic-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 380px;
+  height: 480px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .tech-tree {
@@ -36,9 +38,13 @@
 
 .tech-icons {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
   z-index: 10;
-  margin-top: 50px;
+  margin-top: 1.75rem;
+  max-width: 100%;
+  padding: 0 0.5rem;
 }
 
 .icon {
@@ -52,6 +58,7 @@
   align-items: center;
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
 }
 
 .icon img {
@@ -165,5 +172,102 @@
 
   to {
     transform: translate(-50%, -50%) rotateX(70deg) rotateZ(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .graphic-container {
+    height: 360px;
+  }
+
+  .tech-icons {
+    gap: 0.5rem;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .connecting-lines {
+    top: 80px;
+    height: 180px;
+  }
+
+  .line-1 { margin-left: -60px; }
+  .line-2 { margin-left: -30px; }
+  .line-4 { margin-left: 30px; }
+  .line-5 { margin-left: 60px; }
+
+  .center-node {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 30px;
+  }
+
+  .tech-logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ring-1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ring-2 {
+    width: 280px;
+    height: 280px;
+  }
+
+  .ring-3 {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graphic-container {
+    height: 300px;
+  }
+
+  .connecting-lines {
+    display: none;
+  }
+
+  .tech-icons {
+    margin-top: 0.5rem;
+  }
+
+  .center-node {
+    margin-bottom: 20px;
+  }
+
+  .ring-1 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ring-2 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .ring-3 {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring-1,
+  .ring-2,
+  .ring-3 {
+    animation: none;
   }
 }

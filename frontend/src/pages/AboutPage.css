@@ -1,9 +1,10 @@
 .about-page {
   position: relative;
   min-height: auto;
-  padding: calc(var(--nav-height) + 1.5rem) 5% 2.5rem;
+  padding: calc(var(--nav-height) + 1.5rem) var(--section-padding-x) 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .about-glow-1 {
@@ -76,7 +77,7 @@
 }
 
 .profile-details h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   color: var(--text-main);
 }
 
@@ -113,7 +114,7 @@
 }
 
 .section-heading {
-  font-size: 2.25rem;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
 }
 
 .timeline {
@@ -189,6 +190,12 @@
   .about-profile {
     flex-direction: column;
     text-align: center;
+    padding: 1.5rem;
+  }
+
+  .profile-image-container {
+    width: 220px;
+    height: 220px;
   }
 
   .profile-details {
@@ -201,6 +208,50 @@
 
   .timeline-dot {
     left: -2rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    gap: 2.5rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .tech-item {
+    padding: 1rem 0.75rem;
+  }
+
+  .tech-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-item:hover {
+    transform: none;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

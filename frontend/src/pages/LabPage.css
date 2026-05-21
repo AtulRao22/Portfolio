@@ -1,7 +1,14 @@
 .lab-page {
   padding-top: var(--nav-height);
+  overflow-x: hidden;
 }
 
 .lab-page .lab-section {
   padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .lab-page .lab-section {
+    gap: 2rem;
+  }
 }

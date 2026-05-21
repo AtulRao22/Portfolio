@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,16 +15,42 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <a href="/#home" className="logo">
+        <a href="/#home" className="logo" onClick={closeMenu}>
           Atul Rao
         </a>
-        <nav className="nav-links">
-          <a href="/#home">Home</a>
-          <Link to="/about">About</Link>
-          <Link to="/lab">Lab</Link>
+
+        <button
+          type="button"
+          className={`nav-toggle ${menuOpen ? 'open' : ''}`}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          <a href="/#home" onClick={closeMenu}>Home</a>
+          <Link to="/about" onClick={closeMenu}>About</Link>
+          <Link to="/lab" onClick={closeMenu}>Lab</Link>
         </nav>
       </div>
     </header>
