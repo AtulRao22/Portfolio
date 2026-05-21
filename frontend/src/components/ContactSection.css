@@ -1,9 +1,9 @@
 .contact-section {
-  padding: 0px 5% 50px;
-  min-height: 80vh;
+  padding: 2rem 5% 2.5rem;
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--text-main);
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   display: inline-block;
   transition: color 0.3s ease;
 }
@@ -44,10 +44,10 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1.5rem;
   max-width: 500px;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 1.5rem auto;
 }
 
 .contact-form input,
@@ -120,9 +120,9 @@
 
 
 .footer {
-  padding-top: 50px;
+  padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: auto;
+  margin-top: 1rem;
 }
 
 .footer p {

@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import atulimg from "../assets/Atul.jpeg";
+import resume from '../assets/Resume-atul.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
 
@@ -72,6 +73,22 @@ const HeroSection = () => {
             web <span className="highlight-outline">applications</span><span className="dots">...</span>
           </p>
           <p className="hero-caption">Focused on clean code, performance, and scalable solutions.</p>
+          <div className="hero-cta">
+            <a
+              href="/#project-experience"
+              className="btn btn-primary"
+              onClick={(e) => {
+                if (window.location.pathname === '/') {
+                  e.preventDefault();
+                  document.getElementById('project-experience')?.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              View Projects
+            </a>
+            <a href={resume} download className="btn btn-secondary">Download Resume</a>
+            <a href="/#contact" className="btn btn-secondary">Contact Me</a>
+          </div>
         </div>
       </div>
 

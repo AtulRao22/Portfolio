@@ -22,8 +22,7 @@ const Navbar = () => {
         <nav className="nav-links">
           <a href="/#home">Home</a>
           <Link to="/about">About</Link>
-          <a href="/#lab">Lab</a>
-          <a href="/#contact">Contact</a>
+          <Link to="/lab">Lab</Link>
         </nav>
       </div>
     </header>

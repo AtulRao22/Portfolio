@@ -1,7 +1,7 @@
 .about-page {
   position: relative;
-  min-height: 100vh;
-  padding: 120px 5% 60px;
+  min-height: auto;
+  padding: calc(var(--nav-height) + 1.5rem) 5% 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -29,8 +29,8 @@
 }
 
 .about-title {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
 }
 
 .about-subtitle {
@@ -41,14 +41,14 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .about-profile {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
-  padding: 3rem;
+  gap: 2rem;
+  padding: 2rem;
   align-items: center;
 }
 
@@ -113,17 +113,17 @@
 .education-section {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .section-heading {
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
   position: relative;
   padding-left: 3rem;
 }
@@ -141,7 +141,7 @@
 
 .timeline-item {
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: transform 0.3s ease;
 }
 
@@ -212,8 +212,8 @@
 .tech-stack-section {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-top: 0;
 }
 
 .tech-category {

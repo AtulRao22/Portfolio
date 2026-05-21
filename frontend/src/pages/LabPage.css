@@ -1,0 +1,7 @@
+.lab-page {
+  padding-top: var(--nav-height);
+}
+
+.lab-page .lab-section {
+  padding-top: 1.5rem;
+}

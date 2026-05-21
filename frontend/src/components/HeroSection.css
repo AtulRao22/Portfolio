@@ -4,15 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 150px;
+  min-height: calc(100dvh - var(--nav-height));
+  padding-top: calc(var(--nav-height) + 1.5rem);
+  padding-bottom: 2.5rem;
 }
 
 .hero-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .avatar-container {
@@ -117,13 +119,21 @@
   font-size: 0.95rem;
   color: var(--text-muted);
   font-weight: 300;
+  margin-bottom: 1.75rem;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
 }
 
 /* About Text Block mixed into Hero section for fluid layout per image */
 .about-text-block {
   max-width: 800px;
   margin-top: 0;
-  padding-bottom: 40px;
+  padding-bottom: 0;
 }
 
 .about-heading {
@@ -166,6 +176,10 @@
   .hero-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-cta {
+    justify-content: center;
   }
 
   .hero-title {

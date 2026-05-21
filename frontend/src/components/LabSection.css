@@ -1,27 +1,72 @@
 .lab-section {
   display: flex;
   flex-direction: column;
-  margin-top: -1rem;
-  gap: 100px;
+  margin-top: 0;
+  gap: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.work-experience {
+  scroll-margin-top: var(--nav-height);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .section-title {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .exp-card {
-  padding: 2rem;
+  padding: 0;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-thumbnail {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.card-thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.exp-card:hover .card-thumbnail-img {
+  transform: scale(1.05);
+}
+
+.exp-card .card-header,
+.exp-card .card-desc,
+.exp-card .learn-more {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.exp-card .card-header {
+  padding-top: 1.25rem;
+}
+
+.exp-card .learn-more {
+  padding-bottom: 1.5rem;
+  display: inline-block;
 }
 
 .exp-card:hover {
@@ -33,19 +78,7 @@
 .card-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
   margin-bottom: 1rem;
-}
-
-.card-icon {
-  font-size: 2rem;
-  background: rgba(0, 0, 0, 0.3);
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .card-title {
@@ -57,7 +90,7 @@
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .learn-more {
@@ -76,24 +109,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 4rem;
-  margin-top: 20px;
+  gap: 2rem;
+  margin-top: 0;
 }
 
 .project-label {
   display: block;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .project-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .project-desc {
-  padding: 2rem;
+  padding: 1.5rem;
   position: relative;
   z-index: 2;
   margin-right: -100px;
@@ -114,47 +147,31 @@
 }
 
 .project-image-container {
-  height: 400px;
+  height: 320px;
   padding: 0;
   overflow: hidden;
   position: relative;
   border-radius: 16px;
   z-index: 1;
+  display: block;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-img-placeholder {
+.project-image-container:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 40px var(--accent-glow);
+}
+
+.project-preview-img {
   width: 100%;
   height: 100%;
-  background: #000;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
+  display: block;
 }
 
-.neon-bg {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.3;
-}
-
-.robot-head {
-  font-size: 8rem;
-  z-index: 2;
-}
-
-.text-overlay-mock {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #fff;
-  z-index: 2;
+.project-link {
+  margin-top: 1.25rem;
 }
 
 @media (max-width: 992px) {

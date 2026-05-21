@@ -6,6 +6,9 @@
   --accent-glow: rgba(140, 82, 255, 0.5);
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.08);
+  --section-padding-y: 3.5rem;
+  --section-padding-x: 5%;
+  --nav-height: 80px;
 }
 
 * {
@@ -39,13 +42,19 @@ a {
 }
 
 section {
-  padding: 100px 5%;
-  min-height: 100vh;
+  padding: var(--section-padding-y) var(--section-padding-x);
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding-y: 2.5rem;
+  }
 }
 
 .text-accent {
@@ -83,6 +92,30 @@ section {
 .btn:hover {
   border-color: var(--accent-color);
   box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #8c52ff 0%, #6b3fd4 100%);
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 24px var(--accent-glow);
+  border-color: transparent;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-color);
+  background: rgba(140, 82, 255, 0.08);
 }
 
 .glass-panel {

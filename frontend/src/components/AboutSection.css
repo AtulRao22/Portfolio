@@ -1,6 +1,7 @@
 .about-graphic-section {
-  padding-top: 0;
-  min-height: 80vh;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  min-height: auto;
 }
 
 .section-header.text-center {
@@ -20,7 +21,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 500px;
+  height: 380px;
 }
 
 .tech-tree {
