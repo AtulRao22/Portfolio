@@ -237,8 +237,15 @@
   }
 
   .connecting-lines {
-    display: none;
+    display: flex;
+    top: 70px;
+    height: 120px;
   }
+
+  .line-1 { margin-left: -45px; }
+  .line-2 { margin-left: -22px; }
+  .line-4 { margin-left: 22px; }
+  .line-5 { margin-left: 45px; }
 
   .tech-icons {
     margin-top: 0.5rem;

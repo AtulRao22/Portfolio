@@ -18,14 +18,6 @@ const HeroSection = () => {
 
           <div className="avatar-annotation">
             <span className="annotation-text">Hello! I Am <span className="text-accent">Atul Rao</span></span>
-            {/* <svg className="annotation-arrow" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M70,20 Q10,20 10,95" stroke="rgba(199, 198, 198, 0.71)" strokeWidth="1.5" fill="none" strokeLinecap="round" markerEnd="url(#arrowhead)" />
-              <defs>
-                <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                  <path d="M0,0 L6,3 L0,6" fill="none" stroke="rgba(255,255,255,0.6)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-                </marker>
-              </defs>
-            </svg> */}
             <svg
               className="annotation-arrow"
               width="120"

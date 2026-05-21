@@ -173,7 +173,8 @@
 
   .project-image-container {
     order: -1;
-    height: 240px;
+    aspect-ratio: 16 / 9;
+    height: auto;
   }
 }
 
@@ -187,7 +188,6 @@
   }
 
   .cards-grid {
-    grid-template-columns: 1fr;
     gap: 1.25rem;
   }
 
@@ -201,9 +201,11 @@
   .project-desc {
     padding: 1.25rem;
   }
+}
 
-  .project-image-container {
-    height: 200px;
+@media (max-width: 576px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
   }
 }
 
