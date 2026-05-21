@@ -261,6 +261,10 @@
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .profile-details p {
+    font-size: .80rem;
+  }
 }
 
 .tech-stack-section {
