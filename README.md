@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB Badge"/>
 </p>
 
-A premium, recruiter-centric, and highly interactive **Full-Stack Developer Portfolio** designed and developed by **Atul Rao**. This application serves as a showcase of Atul's academic background (Bachelor of Computer Applications - BCA), hands-on development expertise, and catalog of full-stack web products. 
+A premium, recruiter-centric, and highly interactive **Full-Stack Developer Portfolio** designed and developed by **Atul Rao**. This application serves as a showcase of my academic background (Bachelor of Computer Applications - BCA), hands-on development expertise, and catalog of full-stack web products. 
 
 Featuring a stunning, responsive **Glassmorphic UI** built entirely from scratch with **Vanilla CSS** and powered by a secure **MERN Backend** that captures recruiter inquiries directly into a MongoDB database.
 
@@ -18,10 +18,7 @@ Featuring a stunning, responsive **Glassmorphic UI** built entirely from scratch
 * 🧑‍💻 **Developer Name:** Atul Rao (BCA Student, University of Rajasthan)
 * 📬 **Direct Email:** [02atulrao@gmail.com](mailto:02atulrao@gmail.com)
 * 💼 **LinkedIn Profile:** [Atul Rao on LinkedIn](https://www.linkedin.com/in/atul-rao-44b2212b8/)
-* 🐙 **GitHub Repository:** [AtulRao22/Portfolio](https://github.com/AtulRao22/Portfolio)
-
 ---
-
 ## 🌟 Key Application Features
 
 ### 🎨 Frontend Experience
@@ -46,11 +43,11 @@ Below are actual, high-resolution screenshots highlighting the visual style and 
 | Page / Section | Description & Visual Keynotes | Live Interface Preview |
 | --- | --- | --- |
 | **Hero Landing** | *Featuring fluid typewriter animations ("Full-Stack Developer (MERN)", "Problem Solver"), a customizable avatar card, and primary CTA buttons.* | ![Hero Landing](screenshots/hero.png) |
-| **About Section (Home)** | *A glassmorphic summary giving visitors a quick, elegant glance at Atul's background and development passion.* | ![Home About](screenshots/home_about.png) |
+| **About Section (Home)** | *A glassmorphic summary giving visitors a quick, elegant glance at my background and development passion.* | ![Home About](screenshots/home_about.png) |
 | **Projects Grid (Home)** | *Direct-link portfolio cards showcasing recent web application creations with GitHub source links.* | ![Home Projects](screenshots/home_projects.png) |
 | **Contact Form** | *A beautiful custom contact card where prospective employers can write messages that submit instantly via API.* | ![Home Contact](screenshots/home_contact.png) |
-| **Dedicated About Page** | *A deep dive showing Atul's BCA education timeline (2023–2026), downloadable PDF resume, and an organized, responsive tech stack grid.* | ![About Page](screenshots/about_page.png) |
-| **Dedicated Lab Page** | *A catalog detailing Atul's key projects with descriptive previews, tech summaries, and live deployment links.* | ![Lab Page](screenshots/lab_page.png) |
+| **Dedicated About Page** | *A deep dive showing my BCA education timeline (2023–2026), downloadable PDF resume, and an organized, responsive tech stack grid.* | ![About Page](screenshots/about_page.png) |
+| **Dedicated Lab Page** | *A catalog detailing my key projects with descriptive previews, tech summaries, and live deployment links.* | ![Lab Page](screenshots/lab_page.png) |
 
 ---
 
@@ -203,11 +200,11 @@ The portfolio showcases key web products developed by Atul Rao:
 2. **🏠 HomyGo (Property Listing Platform):**
    * A full-stack real estate listing and property rental management system.
    * *Key features:* Full CRUD implementations for landlords/agents, dynamic reviews integration, session authentication, and MongoDB storage.
-   * *Live:* [wanderlust-ynlv.onrender.com](https://wanderlust-ynlv.onrender.com)
+   * *Live:* [HomyGo](https://wanderlust-ynlv.onrender.com)
 
 3. **🎮 BrainTiles (Simon Memory Game):**
    * A retro color-pattern matching cognitive browser game built using native HTML5, JavaScript, and elegant CSS transitions.
-   * *Live:* [BrainTiles on GitHub](https://github.com/AtulRao22/BrainTiles)
+   * *Live:* [BrainTiles](https://braintiles.netlify.app)
 
 ---
 
