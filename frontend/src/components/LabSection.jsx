@@ -30,7 +30,7 @@ const LabSection = () => {
     {
       title: 'TaskFlow - Task Management Website',
       image: '/projects/taskflow.png',
-      desc: 'Built a responsive task management web app using React that allows users to create, edit, delete, and manage daily tasks efficiently. Focused on clean UI, responsive design, and seamless task organization.',
+      desc: 'Built a responsive task management web app using React that allows users to create, edit, delete, and manage daily tasks efficiently.',
       link: 'https://github.com/AtulRao22/TaskFlow'
     }
   ];
