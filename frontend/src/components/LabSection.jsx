@@ -26,6 +26,12 @@ const LabSection = () => {
       image: '/projects/braintiles.png',
       desc: 'A browser-based memory game built with HTML, CSS, and JavaScript, featuring increasing color sequences',
       link: 'https://github.com/AtulRao22/BrainTiles'
+    },
+    {
+      title: 'TaskFlow - Task Management Website',
+      image: '/projects/taskflow.png',
+      desc: 'Built a responsive task management web app using React that allows users to create, edit, delete, and manage daily tasks efficiently. Focused on clean UI, responsive design, and seamless task organization.',
+      link: 'https://github.com/AtulRao22/TaskFlow'
     }
   ];
 
