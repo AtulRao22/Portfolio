@@ -45,7 +45,6 @@ Below are actual, high-resolution screenshots highlighting the visual style and 
 | **Hero Landing** | *Featuring fluid typewriter animations ("Full-Stack Developer (MERN)", "Problem Solver"), a customizable avatar card, and primary CTA buttons.* | ![Hero Landing](screenshots/hero.png) |
 | **About Section (Home)** | *A glassmorphic summary giving visitors a quick, elegant glance at my background and development passion.* | ![Home About](screenshots/home_about.png) |
 | **Projects Grid (Home)** | *Direct-link portfolio cards showcasing recent web application creations with GitHub source links.* | ![Home Projects](screenshots/home_projects.png) |
-| **Contact Form** | *A beautiful custom contact card where prospective employers can write messages that submit instantly via API.* | ![Home Contact](screenshots/home_contact.png) |
 | **Dedicated About Page** | *A deep dive showing my BCA education timeline (2023–2026), downloadable PDF resume, and an organized, responsive tech stack grid.* | ![About Page](screenshots/about_page.png) |
 | **Dedicated Lab Page** | *A catalog detailing my key projects with descriptive previews, tech summaries, and live deployment links.* | ![Lab Page](screenshots/lab_page.png) |
 
@@ -111,39 +110,6 @@ Portfolio/
 └── package.json              # Shared project utilities
 ```
 
----
-
-## 🔌 API Documentation
-
-### Contact Submission
-Save custom messages from recruiters directly to MongoDB.
-
-* **Endpoint:** `/api/contact`
-* **Method:** `POST`
-* **Headers:** `Content-Type: application/json`
-* **Request Body Schema:**
-  ```json
-  {
-    "name": "Jane Doe",
-    "email": "janedoe@example.com",
-    "message": "Hello Atul! I loved your portfolio. Let's discuss an opportunity."
-  }
-  ```
-* **Success Response (201 Created):**
-  ```json
-  {
-    "success": true,
-    "message": "Contact message saved successfully."
-  }
-  ```
-* **Error Response (400 Bad Request):**
-  ```json
-  {
-    "error": "Please provide all required fields."
-  }
-  ```
-
----
 
 ## 🚀 Step-by-Step Local Setup
 
@@ -181,9 +147,6 @@ npm install
 npm run dev
 ```
 By default, the Vite application starts on `http://localhost:5173`. Make sure the frontend utilizes the local backend:
-* Locally, the contact form falls back to `http://localhost:5000` as the API url.
-* To target a production server, define `VITE_API_URL` inside your frontend configuration.
-
 ---
 
 ## 🌟 Spotlight Projects Catalog
