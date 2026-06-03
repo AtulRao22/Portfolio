@@ -56,6 +56,13 @@ const LabSection = () => {
       liveUrl: 'https://wanderlust-ynlv.onrender.com',
       desc: 'HomyGo is a full-stack property listing application designed to manage the complete rental lifecycle. Built using Node.js, Express, and MongoDB, the platform enables users to explore, add, and manage property listings with ease. It features secure user authentication, dynamic property management with CRUD operations, and efficient database handling for real-time data updates.',
     },
+    {
+      title: 'Productr - Product Management Website',
+      image: '/projects/Productr.png',
+      imageAlt: 'Productr product management platform preview',
+      liveUrl: 'https://productr-by-atul.vercel.app',
+      desc: 'Productr is a full-stack product management dashboard built with React 19, Node.js/Express, and MongoDB. It features passwordless OTP authentication, a glassmorphic dark UI, and performance-first data loading using the Stale-While-Revalidate (SWR) caching pattern — serving product data instantly from sessionStorage while revalidating silently in the background, eliminating the full-screen loading states common in CRUD apps.Built as a technical assignment for an internship selection process, the project goes beyond standard CRUD to demonstrate real performance patterns, thoughtful UX, and production-aware engineering decisions.',
+    },
   ];
 
   return (
