@@ -37,7 +37,7 @@ const LabSection = () => {
       title: 'Productr- Product Management Website',
       image: '/projects/Productr.png',
       desc: 'Built a responsive product management web app using React,Node.js and MongoDB that allows users to create, edit, delete, and manage products efficiently.Focused on clean UI, responsive design, and seamless product organization.',
-      link: 'https://github.com/AtulRao22/Productr'
+      link: 'https://github.com/AtulRao22/Productr_Assignment_for_Internship'
     }
   ];
 
