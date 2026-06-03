@@ -61,7 +61,7 @@ const LabSection = () => {
       image: '/projects/Productr.png',
       imageAlt: 'Productr product management platform preview',
       liveUrl: 'https://productr-by-atul.vercel.app',
-      desc: 'Productr is a full-stack product management dashboard built with React 19, Node.js/Express, and MongoDB. It features passwordless OTP authentication, a glassmorphic dark UI, and performance-first data loading using the Stale-While-Revalidate (SWR) caching pattern — serving product data instantly from sessionStorage while revalidating silently in the background, eliminating the full-screen loading states common in CRUD apps.Built as a technical assignment for an internship selection process, the project goes beyond standard CRUD to demonstrate real performance patterns, thoughtful UX, and production-aware engineering decisions.',
+      desc: 'Productr is a full-stack product management dashboard built with React, Node.js/Express, and MongoDB. It features passwordless OTP authentication, a glassmorphic dark UI, and performance-first data loading using the Stale-While-Revalidate (SWR) caching pattern — serving product data instantly from sessionStorage while revalidating silently in the background, eliminating the full-screen loading states common in CRUD apps.Built as a technical assignment for an internship selection process, the project goes beyond standard CRUD to demonstrate real performance patterns, thoughtful UX, and production-aware engineering decisions.',
     },
   ];
 
