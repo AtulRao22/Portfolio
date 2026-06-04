@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import atulimg from "../assets/Atul.jpeg";
-import resume from '../assets/Resume-atul.pdf';
+import resume from '../assets/CV_Atul_Rao.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
 
