@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutPage.css';
 import atulImg from '../assets/Atul.jpeg';
-import resume from '../assets/Resume-atul.pdf';
+import resume from '../assets/CV_Atul_Rao.pdf';
 
 const AboutPage = () => {
   return (
